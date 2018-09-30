@@ -1,5 +1,5 @@
 # MyChatApplication
-Android chat application. Uses Firebase.
+Android chat application. Uses Firebase as back-end.
 
 Current status 30th September 2018:
 
