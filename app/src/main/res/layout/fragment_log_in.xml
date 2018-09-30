@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInFragment">
+
+    <TextView
+        android:id="@+id/logInTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="Sign in to the application"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/logInUserNameTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="Username (Please use email)"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logInTitleTextView" />
+
+    <EditText
+        android:id="@+id/logInUserNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/logInUserNameTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/logInUserNameTitleTextView" />
+
+    <TextView
+        android:id="@+id/logInPasswordTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/passwordtitletextview"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/logInUserNameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/logInUserNameEditText" />
+
+    <EditText
+        android:id="@+id/logInPasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/logInPasswordTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/logInPasswordTitleTextView" />
+
+    <TextView
+        android:id="@+id/logInRecoverPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:clickable="true"
+        android:text="@string/recoverpasswordtextview"
+        android:textColor="#2f92d7"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/logInLinkSignUpTextView"
+        app:layout_constraintStart_toStartOf="@+id/logInLinkSignUpTextView" />
+
+    <TextView
+        android:id="@+id/logInLinkSignUpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="184dp"
+        android:clickable="true"
+        android:text="@string/linksignuptextview"
+        android:textColor="#2f92d7"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/logInButton"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="SIGN IN"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

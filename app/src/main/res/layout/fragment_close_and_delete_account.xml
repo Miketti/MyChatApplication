@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CloseAndDeleteAccountFragment">
+
+    <TextView
+        android:id="@+id/closeAndDeleteAccountTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="Close and delete account"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/closeAndDeleteAccountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="16dp"
+        android:text="When proceeding, your account will be deactivated immediately and almost all features will become disabled. However, there is 7 days grace period while you can still sign in to your account, reactive the account and continue the use of the account normally. When the grace period ends, the account will be DELETED PERMANENTLY and there is NO WAY to recover it."
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/closeAndDeleteAccountTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/closeAndDeleteAccountTitleTextView" />
+
+    <Button
+        android:id="@+id/CloseAndDeleteAccountButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="DELETE ACCOUNT"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">MyChatApplication</string>
+    <string name="welcometextview">Chat application for chatting with people! Fast! Easy! Secure!</string>
+    <string name="getstartedbutton">GET STARTED</string>
+    <!-- SignInActivity Strings -->
+    <string name="passwordtitletextview">Password</string>
+    <string name="linksignuptextview">New user? Click here to create account!</string>
+    <string name="recoverpasswordtextview">Forgot password? Click here.</string>
+    <!-- SignUpActivity Strings-->
+    <string name="signuptitletextview">Create account</string>
+    <string name="caemailtitletextview">Email</string>
+    <string name="cainvalidemailtextview" />
+    <string name="causernametitletextview">Username</string>
+    <string name="causernameedittext"></string>
+    <string name="cainvalidusernametextview" />
+    <string name="capasswordtitletextview">Password</string>
+    <string name="cainvalidpasswordtextview" />
+    <string name="capasswordagaintextview">Type password again</string>
+    <string name="cainvalidpasswordagaintextview" />
+    <string name="createaccountbutton">CREATE ACCOUNT</string>
+    <!-- PasswordResetActivity Strings-->
+    <string name="passwordresettitletextview">Password reset</string>
+    <string name="passwordresettextviewemail">Enter your email address for getting password reset code</string>
+    <string name="premailorcodeedittext" />
+    <string name="sendcode">SEND CODE</string>
+    <string name="Ihavethecode">Already have the code? Click here to change your password</string>
+    <!-- SetNewPasswordActivityStrings-->
+    <string name="snpusernametitletextview">Username</string>
+    <string name="snpusername" />
+    <string name="snppasswordtitletextview">Password</string>
+    <string name="snpinvalidpasswordtextview" />
+    <string name="snpinvalidconfirmpassword"></string>
+    <string name="snpsetpasswordbutton">SET PASSWORD</string>
+    <string name="sendchatmessagebutton">SEND MESSAGE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string-array name="SettingOptions">
+        <item>Change email address</item>
+        <item>Change password</item>
+        <item>Check for updates</item>
+        <item>Close and delete account</item>
+        <item>About</item>
+    </string-array>
+
+</resources>

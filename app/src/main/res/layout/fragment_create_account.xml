@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CreateAccountFragment">
+
+    <TextView
+        android:id="@+id/createAccountTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/signuptitletextview"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/createAccountEmailTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/caemailtitletextview"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/createAccountTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountTitleTextView" />
+
+    <EditText
+        android:id="@+id/createAccountEmailEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/createAccountEmailTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountEmailTitleTextView" />
+
+    <TextView
+        android:id="@+id/createAccountInvalidEmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cainvalidemailtextview"
+        android:textColor="#ff0000"
+        app:layout_constraintStart_toStartOf="@+id/createAccountEmailEditText"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountEmailEditText" />
+
+    <TextView
+        android:id="@+id/createAccountUserNameTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/causernametitletextview"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/createAccountInvalidEmailTextView"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountInvalidEmailTextView" />
+
+    <EditText
+        android:id="@+id/createAccountUserNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/causernameedittext"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/createAccountUserNameTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountUserNameTitleTextView" />
+
+    <TextView
+        android:id="@+id/createAccountInvalidUserNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cainvalidusernametextview"
+        android:textColor="#ff0000"
+        app:layout_constraintStart_toStartOf="@+id/createAccountUserNameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountUserNameEditText" />
+
+    <TextView
+        android:id="@+id/createAccountPasswordTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/capasswordtitletextview"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountInvalidUserNameTextView" />
+
+    <EditText
+        android:id="@+id/createAccountPasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/createAccountPasswordTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountPasswordTitleTextView" />
+
+    <TextView
+        android:id="@+id/createAccountInvalidPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cainvalidpasswordtextview"
+        android:textColor="#ff0000"
+        app:layout_constraintStart_toStartOf="@+id/createAccountPasswordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountPasswordEditText" />
+
+    <TextView
+        android:id="@+id/createAccountPasswordAgainTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/capasswordagaintextview"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/createAccountInvalidPasswordTextView"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountInvalidPasswordTextView" />
+
+    <EditText
+        android:id="@+id/createAccountPasswordAgainEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/createAccountPasswordAgainTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountPasswordAgainTitleTextView" />
+
+    <TextView
+        android:id="@+id/createAccountInvalidPasswordAgainTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cainvalidpasswordagaintextview"
+        android:textColor="#ff0000"
+        app:layout_constraintStart_toStartOf="@+id/createAccountPasswordAgainEditText"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountPasswordAgainEditText" />
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/createaccountbutton"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
