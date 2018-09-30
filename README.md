@@ -1,5 +1,5 @@
 # MyChatApplication
-Android chat application. Uses Firebase as back-end. This project will be updated according to "available time and interest during free time."
+Android chat application. Uses Firebase as back-end. This project of free time will be updated according to "available time and interest during free time." = Silloin kun vapaa-ajalla riittää aikaa ja innostusta.
 
 Current status 30th September 2018:
 
