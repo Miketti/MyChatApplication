@@ -7,7 +7,17 @@ Most layouts exists and navigation between them is possible. But backend is at v
 
 Backend:
 
-- Account creation possible
-- Logging in possible
+- Account creation possible. However, email/password change, password recovery or deleting account is not currently possible (because not implemented yet).
+- Logging in with created account possible. Logging out might have some issues.
 
-More coming...
+For testing purposes, it is possible to sign in with some pre-created accounts. The username(email) is:
+
+testuserXX@mychatapplication.com
+
+where XX means number between 01-06. The password is:
+
+testpasswordXX
+
+where XX means number between 01-06 and is equivalent the number in email.
+
+Development work will continue later...
