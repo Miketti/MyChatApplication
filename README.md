@@ -10,7 +10,7 @@ Backend:
 - Account creation possible. However, email/password change, password recovery or deleting account is not currently possible (because not implemented yet).
 - Logging in with created account possible. Logging out might have some issues.
 
-For testing purposes, it is possible to sign in with some pre-created accounts. The username(email) is:
+For testing purposes: If you don't want to create own account, it is possible to sign in with some pre-created accounts. The username(email) is:
 
 **testuserXX@mychatapplication.com**
 
