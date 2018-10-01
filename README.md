@@ -12,11 +12,11 @@ Backend:
 
 For testing purposes, it is possible to sign in with some pre-created accounts. The username(email) is:
 
-*testuserXX@mychatapplication.com*
+*_testuserXX@mychatapplication.com_*
 
 where XX means number between 01-06. The password is:
 
-*testpasswordXX*
+*_testpasswordXX_*
 
 where XX means number between 01-06 and is equivalent the number in email.
 
