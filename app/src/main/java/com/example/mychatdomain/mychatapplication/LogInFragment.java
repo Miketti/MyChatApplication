@@ -31,7 +31,8 @@ public class LogInFragment extends Fragment implements View.OnClickListener {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    EditText loginusernamefield, loginpasswordfield;
+    EditText loginusernamefield;
+    EditText loginpasswordfield;
     Button loginbutton;
 
     private OnFragmentInteractionListener mListener;

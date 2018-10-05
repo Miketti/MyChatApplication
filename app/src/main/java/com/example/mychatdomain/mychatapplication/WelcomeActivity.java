@@ -54,7 +54,7 @@ public class WelcomeActivity extends AppCompatActivity implements CreateAccountF
     }
 
     private void updateLoginStatus (FirebaseUser user) {
-        if (user == null) {
+        if (user != null) {
             Log.d("Login status", "Not signed in");
         } else {
             Log.d("Login status", "Signed in");
@@ -63,8 +63,8 @@ public class WelcomeActivity extends AppCompatActivity implements CreateAccountF
 
     private void createAccount(String email, String password) {
 
-        progressdialog.setTitle("Create account");
-        progressdialog.setMessage("Creating account...");
+        progressdialog.setTitle("Create account.");
+        progressdialog.setMessage("Creating account.........");
         progressdialog.setIndeterminate(false);
         progressdialog.show();
 
@@ -89,8 +89,8 @@ public class WelcomeActivity extends AppCompatActivity implements CreateAccountF
 
     private void signIn(String email, String password) {
 
-        progressdialog.setTitle("Sign in");
-        progressdialog.setMessage("Signing in to application...");
+        progressdialog.setTitle("Sign in.");
+        progressdialog.setMessage("Signing in to application.........");
         progressdialog.setIndeterminate(false);
         progressdialog.show();
 

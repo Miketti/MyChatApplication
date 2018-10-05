@@ -32,8 +32,14 @@ public class CreateAccountFragment extends Fragment implements View.OnClickListe
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    EditText emailedittext, usernameedittext, passwordedittext, confirmpasswordedittext;
-    TextView invalidemailtext, invalidusernametext,invalidpasswordtext, invalidconfirmpasswordtext;
+    EditText emailedittext;
+    TextView invalidemailtext;
+    EditText usernameedittext;
+    TextView invalidusernametext;
+    EditText passwordedittext;
+    TextView invalidpasswordtext;
+    EditText confirmpasswordedittext;
+    TextView invalidconfirmpasswordtext;
     Button create_account_button;
 
     private OnFragmentInteractionListener mListener;
