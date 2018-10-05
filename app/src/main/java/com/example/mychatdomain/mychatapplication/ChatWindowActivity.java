@@ -11,6 +11,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
@@ -19,6 +20,7 @@ import android.widget.EditText;
 import android.support.v7.widget.Toolbar;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class ChatWindowActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, ChatFragment.OnFragmentInteractionListener, SettingsFragment.OnFragmentInteractionListener, ChangeEmailFragment.OnFragmentInteractionListener, ChangePasswordFragment.OnFragmentInteractionListener, CheckForUpdatesFragment.OnFragmentInteractionListener, CloseAndDeleteAccountFragment.OnFragmentInteractionListener, AboutFragment.OnFragmentInteractionListener {
 
@@ -38,6 +40,8 @@ public class ChatWindowActivity extends AppCompatActivity implements NavigationV
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         mDrawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+        Log.d("CWA Login Status", FirebaseAuth.getInstance().toString());
+        Log.d("CWA Current User", FirebaseAuth.getInstance().getCurrentUser().toString());
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ChatFragment()).commit();
