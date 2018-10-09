@@ -16,6 +16,10 @@ import android.view.ViewGroup;
  * to handle interaction events.
  * Use the {@link SetNewPasswordFragment#newInstance} factory method to
  * create an instance of this fragment.
+ *
+ * This is SetNewPasswordFragment. This fragment is shown during WelcomeActivity when user resets and sets a new password for the account.
+ * NOT TO BE CONFUSED WITH ChangePasswordFragment.
+ *
  */
 public class SetNewPasswordFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match

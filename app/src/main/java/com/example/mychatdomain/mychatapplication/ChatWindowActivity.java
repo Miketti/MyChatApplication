@@ -22,8 +22,12 @@ import android.support.v7.widget.Toolbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+
+//This activity contains all interactions which are related to chatting and all fragments related to chatting. This activity will be shown, when the user is logged in.
+
 public class ChatWindowActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, ChatFragment.OnFragmentInteractionListener, SettingsFragment.OnFragmentInteractionListener, ChangeEmailFragment.OnFragmentInteractionListener, ChangePasswordFragment.OnFragmentInteractionListener, CheckForUpdatesFragment.OnFragmentInteractionListener, CloseAndDeleteAccountFragment.OnFragmentInteractionListener, AboutFragment.OnFragmentInteractionListener {
 
+    //DrawerLayout is used for navigation drawer.
     DrawerLayout mDrawerLayout;
 
     @Override
@@ -43,12 +47,14 @@ public class ChatWindowActivity extends AppCompatActivity implements NavigationV
         Log.d("CWA Login Status", FirebaseAuth.getInstance().toString());
         Log.d("CWA Current User", FirebaseAuth.getInstance().getCurrentUser().toString());
 
+        //ChatFragment will be shown as a default fragment when the activity is created.
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ChatFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_settings);
         }
     }
 
+    //This handles navigation drawer clicks. It opens SettingFragment or the user is logget out.
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
@@ -70,6 +76,7 @@ public class ChatWindowActivity extends AppCompatActivity implements NavigationV
 
     }
 
+    //If the back button is pressed and the drawer is open, the drawer will be closed at first.
     @Override
     public void onBackPressed() {
         if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
@@ -81,6 +88,7 @@ public class ChatWindowActivity extends AppCompatActivity implements NavigationV
     }
 
 
+    //If user touches outside of active textview.
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {

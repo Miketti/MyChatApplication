@@ -16,6 +16,9 @@ import android.view.ViewGroup;
  * to handle interaction events.
  * Use the {@link CloseAndDeleteAccountFragment#newInstance} factory method to
  * create an instance of this fragment.
+ *
+ * This is CloseAndDeleteAccountFragment. This Fragment is shown when "Close and delete account" is selected in SettingsFragment.
+ *
  */
 public class CloseAndDeleteAccountFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match

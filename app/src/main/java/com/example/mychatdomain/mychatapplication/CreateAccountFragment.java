@@ -22,6 +22,9 @@ import android.widget.Toast;
  * to handle interaction events.
  * Use the {@link CreateAccountFragment#newInstance} factory method to
  * create an instance of this fragment.
+ *
+ * This is CreateAccountFragment. This fragment is shown during WelcomeActivity when user wants to create an account.
+ *
  */
 public class CreateAccountFragment extends Fragment implements View.OnClickListener {
     // TODO: Rename parameter arguments, choose names that match
@@ -37,6 +40,7 @@ public class CreateAccountFragment extends Fragment implements View.OnClickListe
     Button create_account_button;
 
     private OnFragmentInteractionListener mListener;
+    //CallBackListener is used to listen callbacks between fragment and host activity.
     CallBackListener callbacklistener;
 
 
@@ -76,6 +80,7 @@ public class CreateAccountFragment extends Fragment implements View.OnClickListe
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_create_account, container, false);
 
+        //TextWatcher for listeing text changes in EditText fields.
         TextWatcher textWatcher = new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -162,6 +167,7 @@ public class CreateAccountFragment extends Fragment implements View.OnClickListe
         mListener = null;
     }
 
+    //This is used when "Create account" button is clicked. If there are errors relating email, username or password, a Toast with informative text will be shown.
     @Override
     public void onClick(View v) {
         if (invalidemailtext.getText().toString().trim().equals("") && invalidusernametext.getText().toString().trim().equals("") && invalidpasswordtext.getText().toString().trim().equals("") && invalidconfirmpasswordtext.getText().toString().trim().equals("")) {
@@ -187,6 +193,7 @@ public class CreateAccountFragment extends Fragment implements View.OnClickListe
         void onFragmentInteraction(Uri uri);
     }
 
+    //Registration data will be passed to the CallBackListener
     public void passRegistrationData() {
         String email = emailedittext.getText().toString().trim();
         String username = usernameedittext.getText().toString();

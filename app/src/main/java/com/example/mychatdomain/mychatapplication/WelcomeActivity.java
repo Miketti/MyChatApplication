@@ -15,8 +15,11 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+//This is the WelcomeActivity, the first activity of the application. This activity will be shown only if the device is not logged in to the service.
+
 public class WelcomeActivity extends AppCompatActivity implements CreateAccountFragment.OnFragmentInteractionListener, LogInFragment.OnFragmentInteractionListener, PasswordResetSendCodeFragment.OnFragmentInteractionListener, PasswordResetUseCodeFragment.OnFragmentInteractionListener, SetNewPasswordFragment.OnFragmentInteractionListener, WelcomeFragment.OnFragmentInteractionListener, CallBackListener {
 
+    //Firebase is used as back-end.
     private FirebaseAuth mAuth;
     ProgressDialog progressdialog;
 
@@ -43,16 +46,19 @@ public class WelcomeActivity extends AppCompatActivity implements CreateAccountF
 
     }
 
+    //Implements CallBackListener
     @Override
     public void onRegistrationDataPass(String email, String username, String password) {
         createAccount(email, password);
     }
 
+    //Implements CallBackListener
     @Override
     public void onSignInDataPass(String email, String password) {
         signIn(email, password);
     }
 
+    //This is mainly used for Logging purposes
     private void updateLoginStatus (FirebaseUser user) {
         if (user == null) {
             Log.d("Login status", "Not signed in");
@@ -68,18 +74,19 @@ public class WelcomeActivity extends AppCompatActivity implements CreateAccountF
         progressdialog.setIndeterminate(false);
         progressdialog.show();
 
+        //The account is created here and Toast are used to show the result of the account creation.
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Log.d("Create user: ", "Success");
-                            Toast.makeText(WelcomeActivity.this, "User successfully created. You can now sign in.", Toast.LENGTH_LONG).show();
+                            Log.d("Create account: ", "Success");
+                            Toast.makeText(WelcomeActivity.this, "Account successfully created. You can now sign in.", Toast.LENGTH_LONG).show();
                             FirebaseUser user = mAuth.getCurrentUser();
                             updateLoginStatus(user);
                         } else {
-                            Log.d("Create user: ", "Failure", task.getException());
-                            Toast.makeText(WelcomeActivity.this, "User creation failed. Please try again.", Toast.LENGTH_LONG).show();
+                            Log.d("Create account: ", "Failure", task.getException());
+                            Toast.makeText(WelcomeActivity.this, "Account creation failed. Please try again.", Toast.LENGTH_LONG).show();
                             updateLoginStatus(null);
                         }
                         progressdialog.dismiss();
@@ -94,6 +101,7 @@ public class WelcomeActivity extends AppCompatActivity implements CreateAccountF
         progressdialog.setIndeterminate(false);
         progressdialog.show();
 
+        //The login is executed here and Toast are used to show the result of the login.
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override

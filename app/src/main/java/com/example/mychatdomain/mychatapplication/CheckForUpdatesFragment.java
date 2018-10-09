@@ -16,6 +16,9 @@ import android.view.ViewGroup;
  * to handle interaction events.
  * Use the {@link CheckForUpdatesFragment#newInstance} factory method to
  * create an instance of this fragment.
+ *
+ * This is CheckForUpdatesFragment. This Fragment is shown when "Check for updates" is selected in SettingsFragment.
+ *
  */
 public class CheckForUpdatesFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match

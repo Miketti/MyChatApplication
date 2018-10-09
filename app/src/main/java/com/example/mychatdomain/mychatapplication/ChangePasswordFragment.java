@@ -16,6 +16,10 @@ import android.view.ViewGroup;
  * to handle interaction events.
  * Use the {@link ChangePasswordFragment#newInstance} factory method to
  * create an instance of this fragment.
+ *
+ * This is ChangePasswordFragment. This Fragment is shown when "Change password" is selected in SettingsFragment.
+ * NOT TO BE CONFUSED WITH SetNewPasswordFragment.
+ *
  */
 public class ChangePasswordFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match

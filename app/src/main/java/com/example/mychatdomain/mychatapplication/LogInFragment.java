@@ -21,6 +21,9 @@ import android.widget.Toast;
  * to handle interaction events.
  * Use the {@link LogInFragment#newInstance} factory method to
  * create an instance of this fragment.
+ *
+ * This is LoginFragment. This fragment is shown during WelcomeActivity when user wants to log in.
+ *
  */
 public class LogInFragment extends Fragment implements View.OnClickListener {
     // TODO: Rename parameter arguments, choose names that match
@@ -35,6 +38,7 @@ public class LogInFragment extends Fragment implements View.OnClickListener {
     Button loginbutton;
 
     private OnFragmentInteractionListener mListener;
+    //CallBackListener is used to listen callbacks between fragment and host activity.
     CallBackListener callbacklistener;
 
     public LogInFragment() {
@@ -77,6 +81,7 @@ public class LogInFragment extends Fragment implements View.OnClickListener {
         loginbutton = (Button)loginfragmentview.findViewById(R.id.logInButton);
         loginbutton.setOnClickListener(this);
 
+        //This opens PasswordResetSendCodeFragment when the text is clicked.
         TextView forgotPasswordText = (TextView) loginfragmentview.findViewById(R.id.logInRecoverPasswordTextView);
         forgotPasswordText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,6 +92,7 @@ public class LogInFragment extends Fragment implements View.OnClickListener {
             }
         });
 
+        //This opens PasswordResetUseCodeFragment when the text is clicked.
         TextView createAccountText = (TextView)loginfragmentview.findViewById(R.id.logInLinkSignUpTextView);
         createAccountText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -150,6 +156,7 @@ public class LogInFragment extends Fragment implements View.OnClickListener {
         void onFragmentInteraction(Uri uri);
     }
 
+    //Login data will be passed to the CallBackListener
     public void passSignInData() {
         String email = loginusernamefield.getText().toString().trim();
         String password = loginpasswordfield.getText().toString().trim();

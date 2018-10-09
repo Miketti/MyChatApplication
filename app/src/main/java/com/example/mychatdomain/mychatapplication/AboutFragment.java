@@ -16,6 +16,10 @@ import android.view.ViewGroup;
  * to handle interaction events.
  * Use the {@link AboutFragment#newInstance} factory method to
  * create an instance of this fragment.
+ *
+ *
+ * This is AboutFragment. This Fragment is shown when "About" is selected in SettingsFragment.
+ *
  */
 public class AboutFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match

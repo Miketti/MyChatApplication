@@ -18,6 +18,9 @@ import android.widget.TextView;
  * to handle interaction events.
  * Use the {@link PasswordResetSendCodeFragment#newInstance} factory method to
  * create an instance of this fragment.
+ *
+ * This is PasswordResetSendCodeFragment. This fragment is shown during WelcomeActivity when user wants to claim a password reset code to recover his/her account password.
+ *
  */
 public class PasswordResetSendCodeFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match

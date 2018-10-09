@@ -18,6 +18,9 @@ import android.widget.Button;
  * to handle interaction events.
  * Use the {@link WelcomeFragment#newInstance} factory method to
  * create an instance of this fragment.
+ *
+ * This is WelcomeFragment. This fragment includes the welcome text and "Get started" button.
+ *
  */
 public class WelcomeFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
@@ -67,6 +70,7 @@ public class WelcomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View welcomefragmentview = inflater.inflate(R.layout.fragment_welcome, container, false);
         Button getstarted = (Button)welcomefragmentview.findViewById(R.id.getstartedbutton);
+        //This listener is implemented to listen "Get started" button click and move to the LoginFragment.
         getstarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

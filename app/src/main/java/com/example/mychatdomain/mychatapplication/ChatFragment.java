@@ -18,6 +18,9 @@ import android.widget.Button;
  * to handle interaction events.
  * Use the {@link ChatFragment#newInstance} factory method to
  * create an instance of this fragment.
+ *
+ * This is ChatFragment. The chat content will be shown in this fragment.
+ *
  */
 public class ChatFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match

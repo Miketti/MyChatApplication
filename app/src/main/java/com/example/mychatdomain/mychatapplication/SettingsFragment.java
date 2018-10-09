@@ -20,6 +20,9 @@ import android.widget.ArrayAdapter;
  * to handle interaction events.
  * Use the {@link SettingsFragment#newInstance} factory method to
  * create an instance of this fragment.
+ *
+ * This is SettingsFragment. This fragment is shown during ChatWindowActivity and this fragment shows a list of options, which opens a new fragment each based on user's choice.
+ *
  */
 public class SettingsFragment extends ListFragment implements AdapterView.OnItemClickListener {
     // TODO: Rename parameter arguments, choose names that match

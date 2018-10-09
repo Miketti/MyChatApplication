@@ -16,6 +16,9 @@ import android.view.ViewGroup;
  * to handle interaction events.
  * Use the {@link ChangeEmailFragment#newInstance} factory method to
  * create an instance of this fragment.
+ *
+ * This is ChangeEmailFragment. This Fragment is shown when "Change email" is selected in SettingsFragment.
+ *
  */
 public class ChangeEmailFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
