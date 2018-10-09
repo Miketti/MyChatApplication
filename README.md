@@ -8,7 +8,7 @@ Most layouts exists and navigation between them is possible. But backend is at v
 Backend:
 
 - Account creation possible. However, email/password change, password recovery or deleting account is not currently possible (because not implemented yet).
-- Logging in with created account possible. Logging out might have some issues.
+- Logging in and logging out with created account is possible.
 
 For testing purposes: If you don't want to create own account, it is possible to sign in with some pre-created accounts. The username (email) is:
 
