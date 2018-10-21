@@ -75,6 +75,7 @@ public class ChatFragment extends Fragment {
             public void onClick(View v) {
                 FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, new SettingsFragment());
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });

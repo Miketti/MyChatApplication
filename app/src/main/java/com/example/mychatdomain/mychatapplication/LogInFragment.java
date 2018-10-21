@@ -88,17 +88,19 @@ public class LogInFragment extends Fragment implements View.OnClickListener {
             public void onClick(View v) {
                 FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.welcome_activity_id, new PasswordResetSendCodeFragment());
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
 
-        //This opens PasswordResetUseCodeFragment when the text is clicked.
+        //This opens CreateAccountFragment when the text is clicked.
         TextView createAccountText = (TextView)loginfragmentview.findViewById(R.id.logInLinkSignUpTextView);
         createAccountText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.welcome_activity_id, new CreateAccountFragment());
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });

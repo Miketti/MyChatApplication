@@ -54,7 +54,7 @@ public class ChatWindowActivity extends AppCompatActivity implements NavigationV
         }
     }
 
-    //This handles navigation drawer clicks. It opens SettingFragment or the user is logget out.
+    //This handles navigation drawer clicks. It opens SettingFragment or the user is logged out.
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {

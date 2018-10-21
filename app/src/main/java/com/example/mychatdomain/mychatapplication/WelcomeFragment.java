@@ -76,6 +76,7 @@ public class WelcomeFragment extends Fragment {
             public void onClick(View v) {
                 FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.welcome_activity_id, new LogInFragment());
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });

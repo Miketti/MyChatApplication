@@ -112,26 +112,31 @@ public class SettingsFragment extends ListFragment implements AdapterView.OnItem
         switch (position) {
             case 0:
                 fragmentTransaction.replace(R.id.fragment_container, new ChangeEmailFragment());
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
                 break;
 
             case 1:
                 fragmentTransaction.replace(R.id.fragment_container, new ChangePasswordFragment());
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
                 break;
 
             case 2:
                 fragmentTransaction.replace(R.id.fragment_container, new CheckForUpdatesFragment());
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
                 break;
 
             case 3:
                 fragmentTransaction.replace(R.id.fragment_container, new CloseAndDeleteAccountFragment());
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
                 break;
 
             case 4:
                 fragmentTransaction.replace(R.id.fragment_container, new AboutFragment());
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
                 break;
 
