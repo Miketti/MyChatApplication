@@ -24,7 +24,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="28dp"
         android:layout_marginRight="16dp"
-        android:text="When proceeding, your account will be deactivated immediately and almost all features will become disabled. However, there is 7 days grace period while you can still sign in to your account, reactive the account and continue the use of the account normally. When the grace period ends, the account will be DELETED PERMANENTLY and there is NO WAY to recover it."
+        android:text="When proceeding, your account will be deactivated immediately and almost all features will become disabled. However, there is 30 days waiting period while you can still sign in to your account, reactive the account and continue the use of the account normally. When the waiting period ends, the account will be DELETED PERMANENTLY and there is NO WAY to recover it."
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/closeAndDeleteAccountTitleTextView"
         app:layout_constraintTop_toBottomOf="@+id/closeAndDeleteAccountTitleTextView" />
